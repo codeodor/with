@@ -36,3 +36,5 @@ block, and is not on @foo).
 
 Not everything is working yet, but it works for the simplest, most common cases I've run up 
 against. More complex tests are on the way, along with code to make them pass.
+
+Special thanks to Reg Braithwaite, for help and ideas along the way.
