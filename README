@@ -1,4 +1,4 @@
-I sometime get a little descriptive with my variable names, so when you're doing a lot of work 
+I sometimes get a little descriptive with my variable names, so when you're doing a lot of work 
 specifically with one object, it gets especially ugly and repetetive, making the code harder to 
 read than it needs to be:
 
