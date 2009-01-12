@@ -8,10 +8,10 @@ I sometimes get a little descriptive with my variable names, so when you're doin
 specifically with one object, it gets especially ugly and repetetive, making the code harder to 
 read than it needs to be:
 
-@contract_participants_on_drugs.contract_id = params[:contract_id]
-@contract_participants_on_drugs.participant_name = params[:participant_name]
-@contract_participants_on_drugs.drug_conviction = DrugConvictions.find(:wtf => 'this is getting ridiculous')
-...
+  @contract_participants_on_drugs.contract_id = params[:contract_id]
+  @contract_participants_on_drugs.participant_name = params[:participant_name]
+  @contract_participants_on_drugs.drug_conviction = DrugConvictions.find(:wtf => 'this is getting ridiculous')
+  ...
 
 And so on. It gets ridiculous.
 
