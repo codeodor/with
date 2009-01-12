@@ -1,6 +1,5 @@
 History.txt
 Manifest.txt
-README
 README.rdoc
 Rakefile
 lib/with.rb
@@ -10,8 +9,5 @@ script/console
 script/destroy
 script/generate
 test/foo.rb
-test/test_helper.rb
 test/test_with.rb
-test/with_on_object_test.rb
-test/with_test.rb
-with.tmproj
+test/test_with_on_object.rb
