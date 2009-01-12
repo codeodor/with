@@ -77,7 +77,7 @@ or
 
 == INSTALL:
 
-* sudo gem install codeodor-with -s http://gems.github.com
+* sudo gem install codeodor-with -s http://http://gems.github.com
 
 == LICENSE:
 
