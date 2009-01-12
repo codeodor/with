@@ -17,22 +17,22 @@ And so on. It gets ridiculous.
 
 Utility Belt implements a with(object) method via a change to Object:
 
-class Object
-  #utility belt implementation
-  def with(object, &block)
-    object.instance_eval &block
+  class Object
+    #utility belt implementation
+    def with(object, &block)
+      object.instance_eval &block
+    end
   end
-end
 
 Unfortunately, that just executes the block in the context of the object, so there isn't any 
 crossover, nor can you perform assignments with attr_accessors (that I was able to do, anyway).
 
 So, here's With.object() to fill the void. 
 
-With.object(@foo) do 
- a = "wtf"
- b = "this is not as bad"
-end
+  With.object(@foo) do 
+    a = "wtf"
+    b = "this is not as bad"
+  end
 
 In the above example, @foo.a and @foo.b are the variables getting set.
 
@@ -56,19 +56,19 @@ block, and is not on @foo).
 
 == SYNOPSIS:
 
-require 'with'
-With.object(@foo) do 
- a = "wtf"
- b = "this is not as bad"
-end
+  require 'with'
+  With.object(@foo) do 
+    a = "wtf"
+    b = "this is not as bad"
+  end
 
 or 
 
-require 'with_on_object'
-with(@foo) do 
- a = "wtf"
- b = "this is not as bad"
-end
+  require 'with_on_object'
+  with(@foo) do 
+    a = "wtf"
+    b = "this is not as bad"
+  end
 
 == REQUIREMENTS:
 
