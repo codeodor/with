@@ -2,7 +2,7 @@ require 'with_sexp_processor'
 require 'parse_tree'
 
 class With
-  VERSION = "0.0.1"
+  VERSION = "0.0.2"
   def self.object(the_object, &block)
     @the_object = the_object
     @original_context = block.binding 

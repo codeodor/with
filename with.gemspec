@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{with}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sammy Larbi"]
@@ -11,12 +11,12 @@ Gem::Specification.new do |s|
   s.files = ["History.txt", "Manifest.txt", "README.rdoc", "Rakefile", "lib/with.rb", "lib/with_on_object.rb", "lib/with_sexp_processor.rb", "test/foo.rb", "test/test_with.rb", "test/test_with_on_object.rb"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/codeodor/with/tree/master}
-  s.rdoc_options = ["--main", "README"]
+  s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{with}
   s.rubygems_version = %q{1.2.0}
   s.summary = %q{I sometimes get a little descriptive with my variable names, so when you're doing a lot of work  specifically with one object, it gets especially ugly and repetetive, making the code harder to  read than it needs to be:  @contract_participants_on_drugs.contract_id = params[:contract_id] @contract_participants_on_drugs.participant_name = params[:participant_name] @contract_participants_on_drugs.drug_conviction = DrugConvictions.find(:wtf => 'this is getting ridiculous') ..}
-  s.test_files = ["test/test_with_on_object.rb", "test/test_with.rb"]
+  s.test_files = ["test/test_with.rb", "test/test_with_on_object.rb"]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
