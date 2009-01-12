@@ -30,6 +30,8 @@ end
 
 In the above example, @foo.a and @foo.b are the variables getting set.
 
+If you prefer, you can require 'with_on_object' instead and use the notation with(object) do ... end.
+
 The tests in the /test directory offer more examples of what's been implemented and tested so far 
 (except where noted - namely performing assignment to a variable that was declared outside the 
 block, and is not on @foo).
