@@ -8,7 +8,7 @@ class WithSexpProcessor < Ruby2Ruby
   end  
   
   def process(exp)
-    hacked=true && hack_nil unless nil.respond_to? "empty"
+    hacked=true && hack_nil unless nil.respond_to? "empty?"
     result = super(exp)
     unhack_nil if hacked
     return result

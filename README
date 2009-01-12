@@ -1,3 +1,9 @@
+= with
+
+* http://github.com/codeodor/with/tree/master
+
+== DESCRIPTION:
+
 I sometimes get a little descriptive with my variable names, so when you're doing a lot of work 
 specifically with one object, it gets especially ugly and repetetive, making the code harder to 
 read than it needs to be:
@@ -40,3 +46,60 @@ Not everything is working yet, but it works for the simplest, most common cases 
 against. More complex tests are on the way, along with code to make them pass.
 
 Special thanks to Reg Braithwaite, for help and ideas along the way.
+
+
+== FEATURES/PROBLEMS:
+
+The tests in the /test directory offer more examples of what's been implemented and tested so far 
+(except where noted - namely performing assignment to a variable that was declared outside the 
+block, and is not on @foo).
+
+== SYNOPSIS:
+
+require 'with'
+With.object(@foo) do 
+ a = "wtf"
+ b = "this is not as bad"
+end
+
+or 
+
+require 'with_on_object'
+with(@foo) do 
+ a = "wtf"
+ b = "this is not as bad"
+end
+
+== REQUIREMENTS:
+
+* Ruby2Ruby
+* ParseTree
+
+== INSTALL:
+
+* sudo gem install codeodor-with -s http://gems. github.com
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2009 FIX
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
