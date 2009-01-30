@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'ruby2ruby'
 
 class WithSexpProcessor < Ruby2Ruby
